@@ -1,0 +1,132 @@
+<!-- I'm a header -->
+<div class="container-fluid lcheader ">
+
+<div class="container header-brand">
+    <div class="row">
+        <div class="col-12 col-sm-7">
+            <div class="row">
+                <div class="watzek-brand col-12">
+                    <a href="https://library.lclark.edu/">Aubrey R. Watzek Library</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="lc-brand col-12">
+                    <a href="https://lclark.edu">Lewis & Clark College</a>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-md-block col-md-5">
+            <div class="row">
+                <div class="site-search d-none d-md-block col-md-12">
+                    <form class="d-flex" id="cse-search-box" action="https://library.lclark.edu/site-search">
+                        <div class="me-2">
+                            <label for="lcss" class="form-label" style="color:white;"> L&C Site Search:</label>
+                            <input id="lcss" class="site-search-input form-control me-2" type="text" name="q" size="30" />
+                            <input class="site-search-go btn btn-outline-light" type="submit" name="sa" value="Go" />
+                        </div>
+                        <input type="hidden" name="cx" value="003799459321519432666:as16wvfy7zi" />
+                        <input type="hidden" name="ie" value="UTF-8" />
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="hours-calendar col-12 text-end" id="api_hours_today_iid3636_lid4016">
+                    <a href="/hours-calendar" class="hours-alt hours-today-row hours-library loc4016">
+                        <span rel="something" class="hours-col-locs" id="tdate"></span><br/>
+                        <span class="hours-col-time" id="hours"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark header-pane header-nav">
+    <div class="container-fluid no-pad">
+
+        <!-- Mobile hours display -->
+        <div class="pulldown-nav-hours d-block d-lg-none">
+            <div id="api_hours_today_iid3636_lid4016" class="d-inline-block">
+                <table class="hours-today">
+                    <tbody>
+                        <tr class="hours-alt hours-today-row hours-library loc4016">
+                            <td class="hours-col-loc"></td>
+                            <td class="hours-col-time"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Mobile toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#watzek-top-navbar" aria-controls="watzek-top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="visually-hidden">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible navbar content -->
+        <div class="collapse navbar-collapse no-pad" id="watzek-top-navbar">
+            <ul class="navbar-nav me-auto" role="navigation">
+                <li class="nav-item dropdown">
+                    <a href="/nav/ql" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Quick Links</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/your-accounts">Your Accounts</a></li>
+                        <li><a class="dropdown-item" href="/coursereserves">Course Reserves</a></li>
+                        <li><a class="dropdown-item" href="/research-guides/course-guides">Course Guides</a></li>
+                        <li><a class="dropdown-item" href="/research-guides/style-guides">Style Guides</a></li>
+                        <li><a class="dropdown-item" href="/hours-calendar">Hours & Calendar</a></li>
+                        <li><a class="dropdown-item" href="http://libcal.lclark.edu/booking/studyrooms">Study Rooms</a></li>
+                        <li><a class="dropdown-item" href="/suggest-purchase">Suggest a Purchase</a></li>
+                        <li><a class="dropdown-item" href="https://watzek.on.worldcat.org/discovery" target="_blank">WorldCat</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="/nav/research" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Research</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/research-guides/subject-guides">Research Guides by Subject</a></li>
+                        <li><a class="dropdown-item" href="/research-guides/course-guides">Research Guides by Course</a></li>
+                        <li><a class="dropdown-item" href="/az.php?t=31639">A-Z List of Databases</a></li>
+                        <li><a class="dropdown-item" href="http://specialcollections.lclark.edu/">Special Collections</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="/nav/borrowing" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Borrowing</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/your-accounts">Your Accounts</a></li>
+                        <li><a class="dropdown-item" href="/borrowing-info">Borrowing Info</a></li>
+                        <li><a class="dropdown-item" href="/coursereserves">Course Reserves</a></li>
+                        <li><a class="dropdown-item" href="https://watzek.account.worldcat.org/profile">Interlibrary Loan</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="/nav/help" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Get Help</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/help">Ask a Librarian</a></li>
+                        <li><a class="dropdown-item" href="/help/liaisons">Who is My Librarian?</a></li>
+                        <li><a class="dropdown-item" href="/help/consultation">Schedule a Consultation</a></li>
+                        <li><a class="dropdown-item" href="/additional-services/accessibility-services">Accessibility Services</a></li>
+                        <li><a class="dropdown-item" href="/new">New to Watzek</a></li>
+                        <li><a class="dropdown-item" href="/help/videos">Video Tutorials</a></li>
+                        <li><a class="dropdown-item" href="/faq">FAQs</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/nav/about">About the Library</a>
+                </li>
+            </ul>
+
+            <!-- Right-aligned nav items -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://primo.lclark.edu/discovery/account?vid=01ALLIANCE_LCC:LCC">
+                        <!-- Note: You'll need to add Bootstrap Icons or another icon library for the user icon -->
+                        <i class="bi bi-person"></i>
+                        <span>Your Primo Account</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</div>

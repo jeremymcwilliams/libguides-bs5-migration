@@ -1,0 +1,403 @@
+<body class="s-lib-public-body">
+
+    <!-- BEGIN: Page Header -->
+    {{public_header}}
+    <!-- END: Page Header -->
+
+    <!-- BEGIN: content -->
+<!--
+<div class="container" style='margin-top:20px;'>
+
+<div class="alert alert-custom" role="alert" style="font-size:16px;background-color:#eee;">
+<p><strong>
+Please visit the Watzek Library COVID-19 <a href="https://library.lclark.edu/coronavirus">information page</a> for to find out about current health and safety measures in the library.
+</strong></p>
+</div>
+
+
+</div>
+-->
+
+
+    <div class="container search-container">
+        <div class="row">
+            <div class="col-xs-12 hidden-xs center search-outer">
+
+            <!-- Begin searchwidget -->
+            <div class="searchwidget" id="watzek">
+
+                <ul class="nav nav-tabs">
+                    <li class="active primo"><a data-toggle="tab" href="#primo"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Quick Search</a></li>
+                    <li class="books"><a data-toggle="tab" href="#books"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Books & Media</a></li>
+                    <!--<li class="eonly"><a data-toggle="tab" href="#eonly"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> E-Resources Only</a></li>-->
+                    <li class="articles"><a data-toggle="tab" href="#articles"><span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Articles & Journals</a></li>
+                    <li class="guides"><a data-toggle="tab" href="#guides"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Guides & Databases</a></li>
+                </ul>
+
+                <div class="tab-content">
+
+                    <div id="primo" class="tab-pane active">
+                        <div class="row">
+                            <div class="searchbox col-xs-12">
+                                <form >
+                                <!--<form action="https://watzekdi.net/boleyweb/widget/doSearch.php" method="get">-->
+                                    <div class="input-group input-group-lg">
+                                        <label class='sr-only' for="quicksearch">Find books, databases, AV materials, and articles in Primo</label>
+                                        <input id="quicksearch" type="text" name="q" placeholder="Find books, databases, AV materials, and articles in Primo" class="form-control textbox quickinput" autofocus>
+                                        <input type="hidden" name="tab" value="primo" />
+                                        <div class="input-group-btn">
+                                            <input type="submit" class="btn btn-default swSubmit    "   id="primoTab" value="Go">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div><!-- searchbox-->
+                        </div><!-- row-->
+                        <div class="row searchopts">
+                            <div class="searchextras col-xs-12 text-right">
+                                <a href="https://primo.lclark.edu/primo-explore/search?vid=LCC&lang=en&sortby=rank&mode=advanced">Advanced Search</a>
+                            </div>
+                        </div>
+
+
+                    </div><!-- tab-pane-->
+
+
+            <!--
+                    <div id="eonly" class="tab-pane ">
+                        <div class="row">
+                            <div class="searchbox col-xs-12">
+                                <form >
+
+                                    <div class="input-group input-group-lg">
+                                        <label class='sr-only' for="eonly">Find ebooks, databases, and articles in Primo</label>
+                                        <input id="eonly" type="text" name="q" placeholder="Find ebooks, databases, and articles in Primo" class="form-control textbox quickinput" autofocus>
+                                        <input type="hidden" name="tab" value="primo" />
+                                        <div class="input-group-btn">
+                                            <input type="submit" class="btn btn-default swSubmit    "   id="eonlyTab" value="Go">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            -->
+                    <div id="books" class="tab-pane">
+                    <form >
+                            <div class="row">
+                                <div class="searchbox col-xs-12">
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" name="q" placeholder="Find books and AV materials at L&C by keyword" class="form-control textbox primoinput">
+                                        <input type="hidden" name="tab" value="books" />
+                                        <div class="input-group-btn">
+                                            <select class="primoquery form-control input-lg" name="index">
+                                            <option selected="selected" value="any">Keyword</option>
+                                            <option value="title">Title</option>
+                                            <option value="creator">Author</option>
+                                            <option value="sub">Subject</option>
+                                        </select>
+                                            <input type="submit" class="btn btn-default swSubmit"  id="booksTab" value="Go">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row searchopts">
+                                <div class="searchextras scopebuttons col-xs-7 text-left" role="radiogroup">
+                                    <span class="lc-local-scope" role="radio"><label class="radio-inline"><input type="radio" name="scope" value="MyInstitution" checked>L&C</label></span>
+                                    <span class="summit-scope" role="radio"><label class="radio-inline"><input type="radio" name="scope" value="SUMMIT">Summit</label></span>
+                                    <span class="worldcat-scope" role="radio"><label class="radio-inline"><input type="radio" name="scope" value="worldcat">WorldCat</label></span>
+                                </div>
+                                <div class="searchextras col-xs-5 text-right">
+                                    <a href="https://primo.lclark.edu/primo-explore/search?vid=LCC&lang=en&sortby=rank&mode=advanced">Advanced Search</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="articles" class="tab-pane">
+                        <div class="row">
+                            <div class="searchbox col-xs-6">
+                            <form >
+                            <!--<form action="https://watzekdi.net/boleyweb/widget/doSearch.php" method="get">-->
+                                    <div class="input-group input-group-lg">
+                                        <label class="sr-only" for="articles">Find articles in Primo by keyword</label>
+                                        <input id="articles" type="text" name="q" placeholder="Find articles in Primo by keyword" class="form-control textbox journalinput">
+                                        <input type="hidden" name="tab" value="journals" />
+                                        <input type="hidden" name="resource" value="article" />
+                                        <div class="input-group-btn">
+                                            <input type="submit" class="btn btn-default swSubmit"  id="articlesTab" value="Go">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="searchbox col-xs-6">
+                            <form >
+                            <!--<form action="https://watzekdi.net/boleyweb/widget/doSearch.php" method="get">-->
+                                    <div class="input-group input-group-lg">
+                                      <label class="sr-only" for="journals">Find journals in Primo by title</label>
+                                        <input id="journals" type="text" name="q" placeholder="Find journals in Primo by title" class="form-control textbox journalinput">
+                                        <input type="hidden" name="tab" value="journals" />
+                                        <input type="hidden" name="resource" value="journal" />
+                                        <div class="input-group-btn">
+                                            <input type="submit" class="btn btn-default swSubmit"  id="journalsTab" value="Go">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row searchopts">
+<!--
+                            <div class="searchextras col-xs-12 text-right">
+                                <a href="https://watzek.account.worldcat.org/profile">Request through Interlibrary Loan</a>
+                            </div>
+-->
+                            <!--
+                            <div class="searchextras col-xs-6 text-right">
+                                <a href="/az.php">Subject Databases</a>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+
+                    <div id="guides" class="tab-pane">
+                        <form action="/srch.php" method="get">
+                            <div class="row">
+                                <div class="searchbox col-xs-12">
+                                    <div class="input-group input-group-lg">
+                                      <label class="sr-only" for="libguides">Find guides, databases, and library information</label>
+                                        <input id="libguides" type="text" name="q" placeholder="Find guides, databases, and library information" class="form-control textbox">
+                                        <div class="input-group-btn">
+                                            <input type="submit" class="btn btn-default"  id="searchTab" value="Go">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row searchopts">
+                                <div class="searchextras col-xs-12 text-right">
+                                    <a href="/research-guides/subject-guides" class="guides-by-subject">Subject Guides</a>
+                                    <span aria-hidden="true"> | </span>
+                                    <a href="/research-guides/course-guides" class="guides-by-course">Course Guides</a>
+                                    <!--<a href="/az.php">Subject Databases</a>-->
+                                    <span aria-hidden="true"> | </span>
+                                    <a href="/az.php?t=31639">Databases A-Z</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div> <!-- .searchwidget -->
+            <!-- end searchwidget -->
+
+
+            </div>
+            <div class="col-xs-12 visible-xs-block center mini-widget-outer">
+<!-- begin mini widget -->
+<div class="searchwidget mini-widget visible-xs-block">
+
+    <ul class="nav nav-tabs">
+        <li class="active primo"><a data-toggle="tab" href="#mini-primo"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Quick Search</a></li>
+        <li class="guides"><a data-toggle="tab" href="#mini-guides"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Site Search</a></li>
+    </ul>
+
+    <div class="tab-content">
+
+        <div id="mini-primo" class="tab-pane active">
+            <div class="row">
+                <div class="searchbox col-xs-12">
+                    <form action="https://boleyweb.watzekdi.net/widget/doSearch.php" method="get">
+                        <div class="input-group">
+                            <input type="text" name="q" placeholder="Find books, databases, AV materials, and articles in Primo" class="form-control textbox quickinput">
+                            <input type="hidden" name="tab" value="primo" />
+                            <input type="hidden" name="ui" value="new" />
+                            <div class="input-group-btn">
+                                <input type="submit" class="btn btn-default" value="Go">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="mini-guides" class="tab-pane">
+            <form action="/srch.php" method="get">
+                <div class="row">
+                    <div class="searchbox col-xs-12">
+                        <div class="input-group">
+                            <input type="text" name="q" placeholder="Find guides, databases, and library information" class="form-control textbox">
+                            <div class="input-group-btn">
+                                <input type="submit" class="btn btn-default" value="Go">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+<!-- end mini widget -->
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="container carousel-container ">
+        <div class="col-xs-12 carousel-outer">
+            <div class="carousel-items">
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container nav-container">
+
+<nav class="nav row watzek-nav hidden-xs" role="navigation">
+    <div class="col-xs-3 nav-section" role="menu">
+        <a href="/nav/about"><h3><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> About the Library</h3></a>
+
+        <div id="s-lg-widget-1483662321478"></div>
+<div id="s-lg-widget-1483662321478" style="width: 100%;">
+	<ul>
+		<li>
+			<a href="https://library.lclark.edu/staff" target="_blank">Watzek Library Staff Directory</a>
+			<div class="s-lg-guide-list-info"></div>
+		</li>
+		<li>
+			<a href="https://library.lclark.edu/floor-maps" target="_blank">Floor Maps</a>
+			<div class="s-lg-guide-list-info"></div>
+		</li>
+		<li>
+			<a href="https://library.lclark.edu/additional-services/alumni-services" target="_blank">Alumni and Visitors</a>
+			<div class="s-lg-guide-list-info"></div>
+		</li>
+		<li>
+			<a href="https://library.lclark.edu/mission" target="_blank">Mission Statement</a>
+			<div class="s-lg-guide-list-info"></div>
+		</li>
+	</ul>
+</div>
+
+
+    </div>
+    <div class="col-xs-3 nav-section" role="menu">
+        <a href="/nav/about"><h3><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Collections</h3></a>
+        <ul>
+            <li role="link"><a href="http://specialcollections.lclark.edu">Special Collections</a></li>         
+            <li role="link"><a href="https://specialcollections.lclark.edu/collections/browse?sort_field=Dublin+Core%2CTitle">Digital Collections</a></li>
+            <li role="link"><a href="https://library.lclark.edu/collection-policies/overview">Collection Overview</a></li>
+            <li role="link"><a href="https://library.lclark.edu/collection-policies/development">Collection Development Policy</a></li>
+        </ul>
+    </div>
+    <div class="col-xs-3 nav-section" role="menu">
+        <a href="/nav/about"><h3><span class="glyphicon glyphicon-user" aria-hidden="true"></span> For Students</h3></a>
+
+        <div id="s-lg-widget-1483662494523" style="width: 100%;">
+	<ul>
+
+		<li>
+			<a href="https://library.lclark.edu/undergrad" target="_blank">Undergraduate Students</a>
+			
+		</li>
+
+		<li>
+			<a href="https://library.lclark.edu/graduate" target="_blank">Graduate Students</a>
+			
+		</li>
+		<li>
+			<a href="https://library.lclark.edu/senior-projects" target="_blank">Senior Projects</a>
+			
+		</li>
+		<li>
+			<a href="https://libcal.lclark.edu/reserve/studyrooms" target="_blank">Study Rooms</a>
+			
+		</li>
+	</ul>
+</div>
+
+    </div>
+    <div class="col-xs-3 nav-section" role="menu">
+        <a href="/nav/about"><h3><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> For Faculty & Staff</h3></a>
+
+<div id="s-lg-widget-1483661612331" style="width: 100%;">
+	<ul>
+
+		<li>
+			<a href="https://library.lclark.edu/faculty" target="_blank">Borrowing</a>
+			<div class="s-lg-guide-list-info"></div>
+		</li>
+		<li>
+			<a href="https://library.lclark.edu/instruction-services" target="_blank">Instruction Services</a>
+			<div class="s-lg-guide-list-info"></div>
+		</li>
+		<li>
+			<a href="https://library.lclark.edu/proxy" target="_blank">Proxy Check-out Form</a>
+			<div class="s-lg-guide-list-info"></div>
+		</li>
+		<li>
+			<a href="https://library.lclark.edu/staff" target="_blank">Library Staff Directory</a>
+			<div class="s-lg-guide-list-info"></div>
+		</li>
+	</ul>
+</div>
+
+    </div>
+</nav>
+<nav class="nav row watzek-nav mini-nav visible-xs-block" role="navigation">
+    <div class="col-xs-12 nav-section" role="menu">
+        <ul>
+           <li role="link"><a href="/hours-calendar"><span class="glyphicon glyphicon-time"></span> <span id="mobileHours"></span></a></li>
+            <li role="link"><a href="/your-accounts"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Your Account</a></li>
+            <li role="link" id="room13862"><a href=""><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Book a Study Room</a></li>
+            <li role="link"><a href="/schedule-consultation"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Schedule a Research Consultation</a></li>
+            <li role="link"><a href="/floor-maps"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Library & Campus Maps</a></li>
+        </ul>
+    </div>
+</nav>
+<div id="interactive" class="viewport"></div>
+<script>
+    jQuery(function() {
+        jQuery("#room13862").LibCalRoomBooking({
+            "iid": 3636,
+            "gid": 13862,
+            "width": 500,
+            "height": 450
+        });
+    });
+</script>
+
+    </div>
+
+    <!-- END: content -->
+
+    <div id="s-lib-alert" title="">
+        <div id="s-lib-alert-content"></div>
+    </div>
+    <div id="s-lib-popover-title" class="hide">
+        <span class="text-info"><strong>title</strong></span>
+        <button type="button" id="popclose" class="close" onclick="jQuery('.s-lib-popover').popover('hide')">&times;</button>
+    </div>
+    <div id="s-lib-popover-content" class="hide"><i class="fa fa-refresh fa-spin"></i> Loading...
+        <button class="btn btn-default btn-sm popclose" type="button">Close</button>
+    </div>
+    <div id="s-lib-scroll-top" title="Back to Top">
+        <span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-angle-double-up fa-stack-1x" style="position:relative; bottom:2px;"></i>
+      </span>
+    </div>
+
+    <!-- BEGIN: Custom Footer -->
+    {{public_footer}}
+    <!-- END: Custom Footer -->
+
+</body>

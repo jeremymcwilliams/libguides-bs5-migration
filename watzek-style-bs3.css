@@ -1,0 +1,607 @@
+@import 'https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Open+Sans:400,400i,700,700i|Sorts+Mill+Goudy';
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css';
+.s-lg-guide-body,
+.s-lib-public-body {
+  padding: 0; }
+
+.tabs {
+  border-bottom: 0.25rem solid #e66b3f;
+  padding-bottom: .1rem; }
+
+.s-lc-c-erc {
+  border-bottom: 0.25rem solid #130; }
+
+.carousel-container,
+.lcheader,
+.nav-container,
+.search-container {
+  border-bottom: 0.25rem solid #e66b3f;
+  padding: 0; }
+
+.nav-section {
+  border-right: 0.25rem solid #e66b3f;
+  margin: 2rem 0; }
+  .nav-section:last-of-type {
+    border-right: 0; }
+
+.nav-outer {
+  padding: 0 2rem; }
+
+.lcheader {
+  margin: auto;
+  padding: 0; }
+  .lcheader .navbar-toggle {
+    padding: 0 2rem; }
+  .lcheader .header-pane {
+    border-radius: 0;
+    margin: 0;
+    padding: 0; }
+  .lcheader .header-brand {
+    margin: 2rem auto 1rem;
+    padding: 0 1rem; }
+  .lcheader .hours-calendar {
+    margin-top: 1.5rem; }
+  .lcheader .hours-library {
+    float: right; }
+  .lcheader .navbar-nav > li > a {
+    padding: 1rem; }
+  .lcheader .nav > .open a {
+    background-color: initial; }
+  .lcheader .navbar {
+    min-height: 4rem; }
+  .lcheader .navbar-right {
+    margin-right: 0;
+    padding-top: .2rem; }
+  .lcheader .no-pad {
+    padding: 0; }
+  .lcheader .dropdown-menu .sub-menu {
+    left: 100%;
+    margin-top: -1px;
+    position: absolute;
+    top: 0;
+    visibility: hidden; }
+  .lcheader .dropdown-menu li:hover .sub-menu {
+    visibility: visible; }
+  .lcheader .dropdown:hover .dropdown-menu {
+    display: block; }
+
+.searchwidget {
+  margin: 5rem auto;
+  height: 13rem;
+  width: 100%; }
+  .searchwidget .nav-tabs li {
+    text-align: center;
+    border: 0;
+    margin: .25rem .3rem 0;
+    width: 24%; }
+    .searchwidget .nav-tabs li a {
+      padding: .5rem .75rem; }
+  .searchwidget .nav-tabs:last-child {
+    margin-right: 0; }
+  .searchwidget .tab-pane {
+    padding-top: .75rem; }
+  .searchwidget .journalquery,
+  .searchwidget .primoquery {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg id='downward-caret'%3E%3C/g%3E%3Cpath fill='%23444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'%3E%3C/path%3E%3C/svg%3E");
+    background-position: 10rem 1rem;
+    background-repeat: no-repeat;
+    border-left: 0;
+    padding: 0 1.5rem;
+    width: 13rem;
+    margin-right: 5.5rem; }
+  .searchwidget #books .input-group-btn input {
+    left: -5.5rem; }
+    .searchwidget #eonly .input-group-btn input {
+      left: -5.5rem; }
+  .searchwidget .searchopts {
+    padding-top: .5rem; }
+  .searchwidget .scopebuttons {
+    padding-left: 1.5rem; }
+    .searchwidget .scopebuttons input {
+      top: .2rem; }
+  .searchwidget .info-popover {
+    height: 1rem; }
+  .searchwidget .lc-local-scope,
+  .searchwidget .summit-scope,
+  .searchwidget .worldcat-scope {
+    cursor: pointer;
+    margin-right: .75rem; }
+
+.mini-widget {
+  margin: 2rem auto 6rem;
+  height: 4rem; }
+  .mini-widget .nav-tabs li {
+    margin: initial;
+    width: 50%; }
+    .mini-widget .nav-tabs li a {
+      font-size: 1.5rem; }
+
+.carousel-container .slick-slider {
+  margin-bottom: 0; }
+
+.carousel-container .slick-dots {
+  bottom: 0; }
+
+.carousel-container .slick-slide > img {
+  display: inline-block;
+  float: left;
+  padding: 2rem;
+  max-width: 50%;
+  max-height: 33rem; }
+
+.carousel-container .slick-dots {
+  padding: 2rem;
+  text-align: right; }
+
+#s-lib-bc {
+  display: none; }
+
+#s-lg-guide-header-search,
+.s-lib-header {
+  padding-top: .75rem; }
+
+.s-lib-box {
+  border: 0;
+  box-shadow: none; }
+  .s-lib-box .s-lib-box-title {
+    border: 0; }
+
+.nav-tabs li a {
+  margin-right: .25rem;
+  padding: .5rem 1.25rem; }
+
+#s-lg-tabs-container .nav-tabs > .active > a,
+#s-lg-tabs-container .nav-tabs > .active > a:hover {
+  border: 0.25rem solid #e66b3f;
+  border-bottom: 0;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  outline: 0; }
+
+.s-lg-az-result {
+  padding: .1rem 0 0 .5rem; }
+
+.s-lg-db-panel-title {
+  padding: .25rem .5rem; }
+
+.margin-bottom-xlg .pad-top-sm {
+  padding: .75rem 0 .75rem .25rem; }
+
+.s-lib-public-side-header {
+  padding: .5rem .5rem .25rem; }
+
+#s-lc-public-title,
+#s-lc-rm-heading {
+  padding-left: 1.25rem; }
+
+.lcfooter {
+  border: 0;
+  padding-left: 0;
+  padding-right: 0; }
+  .lcfooter .footer-social {
+    text-align: right; }
+
+#s-lc-public-bc {
+  margin: 0;
+  padding: .75rem; }
+
+#s-lib-bc-customer,
+#s-lib-bc-group::before,
+#s-lib-bc-site {
+  display: none; }
+
+#s-lg-guide-tabs-title-bar {
+  border-top: none; }
+
+.carousel-outer,
+.s-lc-public > .container {
+  padding: 0; }
+
+.hours,
+.hours td {
+  padding: .25rem; }
+
+.top-nav-item .glyphicon {
+  top: .25rem; }
+
+#s-lib-footer-public {
+  border-top: 0.25rem solid #e66b3f; }
+  #s-lib-footer-public #s-lg-guide-header-tags {
+    display: none; }
+
+@media (max-width: 767px) {
+  #api_hours_today_iid3636_lid4016 {
+    padding-top: .8rem;
+    padding-left: 3rem; }
+    #api_hours_today_iid3636_lid4016 .hours-col-time {
+      padding-left: .5rem; }
+  #watzek-top-navbar {
+    padding-left: 3rem; }
+  .mini-widget {
+    padding: 0 1rem; }
+  .mini-nav .nav-section {
+    padding-left: 3rem; }
+    .mini-nav .nav-section ul {
+      margin: 0; }
+      .mini-nav .nav-section ul li {
+        padding: .5rem 0; }
+      .mini-nav .nav-section ul .glyphicon {
+        padding-right: .5rem; }
+  .footer-contact {
+    width: 100%;
+    text-align: center; }
+  .footer-social {
+    width: 100%; }
+    .footer-social p {
+      text-align: center; } }
+
+.carousel-container,
+.lcfooter,
+.nav-container,
+.s-lc-public,
+.s-lg-guide-body,
+.s-lib-main,
+.s-lib-public-body,
+.search-container {
+  background-color: #fff; }
+
+.carousel-container .slide-caption {
+  background-color: rgba(255, 255, 255, 0.75); }
+
+.lcheader {
+  background: url("https://s3.amazonaws.com/libapps/customers/3066/images/header.png");
+  background-color: #04080f;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .lcheader .dropdown-menu > li:hover {
+    background-color: #04080f; }
+  .lcheader .site-search-input {
+    background-color: transparent; }
+
+#s-lg-tabs-container .nav-tabs > li > a {
+  background-color: #fff;
+  color: #484538; }
+
+#s-lg-tabs-container .nav-tabs > .active > a {
+  background-color: #fff;
+  color: #484538; }
+
+#s-lg-tabs-container .nav-tabs > .active > a:hover,
+#s-lg-tabs-container .nav-tabs > li > a:hover {
+  background-color: #fff;
+  color: #484538; }
+
+.s-lib-box .s-lib-box-title {
+  background-color: #eee;
+  color: #484538; }
+
+.s-lib-box .s-lib-box-content {
+  background-color: #fff; }
+
+@media (max-width: 767px) {
+  .lcheader {
+    background-size: auto; } }
+
+#s-lib-footer-public {
+  background-color: #eee; }
+
+.header-pane {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+body {
+  color: #000;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem; }
+  body button:disabled,
+  body select:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important; }
+  body .glyphicon {
+    top: 3px; }
+  body a {
+    color: #130;
+    text-decoration: underline; }
+    body a:hover {
+      color: #e66b3f; }
+  body .lcfooter,
+  body .lcheader {
+    font-size: 1.5rem; }
+  body .hours-col-loc::after {
+    content: ': '; }
+  body .lcheader .glyphicon,
+  body .lcheader .watzek-brand,
+  body .lcheader a {
+    color: #fff;
+    text-decoration: none; }
+  body .lcheader .lc-brand a,
+  body .lcheader .watzek-brand a {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+    font-family: "Sorts Mill Goudy", serif;
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 4rem;
+    text-decoration: none; }
+  body .lcheader .lc-brand a {
+    font-size: 2.5rem; }
+  body .lcheader .lib-campus-links {
+    text-align: right; }
+    body .lcheader .lib-campus-links li > a {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      cursor: pointer;
+      font-size: 1.7rem; }
+  body .lcheader .header-nav {
+    font-size: 1.5rem; }
+  body .lcheader .hours-col-loc,
+  body .lcheader .hours-col-time {
+    color: #fff;
+    font-size: 1.7rem; }
+  body .lcheader .top-nav-item {
+    font-size: 2rem;
+    text-align: center; }
+  body .lcheader .dropdown-toggle:hover,
+  body .lcheader .nav a:hover {
+    background-color: initial;
+    cursor: pointer; }
+  body .lcheader .dropdown-menu > li > a {
+    color: #000;
+    font-size: 1.5rem; }
+  body .lcheader .dropdown-menu > li:hover > a {
+    color: #fff; }
+  body .lcheader .site-search .site-search-input {
+    color: #fff;
+    font-family: "Open Sans", sans-serif; }
+  body .lcheader .site-search .site-search-input::-webkit-input-placeholder {
+    color: #fff; }
+  body .searchwidget {
+    font-size: 2rem; }
+    body .searchwidget .active > a,
+    body .searchwidget .active > a:focus,
+    body .searchwidget .active > a:hover,
+    body .searchwidget a,
+    body .searchwidget li > a:focus,
+    body .searchwidget li > a:hover {
+      color: #000;
+      text-decoration: none; }
+    body .searchwidget .active > a {
+      outline: 0; }
+      body .searchwidget .active > a .glyphicon {
+        color: #e66b3f; }
+    body .searchwidget input {
+      font-size: 2rem; }
+    body .searchwidget .searchextras a {
+      color: #130;
+      text-decoration: underline; }
+      body .searchwidget .searchextras a:focus, body .searchwidget .searchextras a:hover {
+        color: #e66b3f; }
+    body .searchwidget .dropdown-menu li {
+      font-size: 1.5rem; }
+  body .mini-widget input {
+    font-size: 1rem; }
+  body .mini-widget .btn {
+    font-size: 1.4rem; }
+  body .carousel-container .slide-caption {
+    color: #000;
+    font-size: 1.5rem; }
+    body .carousel-container .slide-caption a {
+      color: #130; }
+      body .carousel-container .slide-caption a:focus, body .carousel-container .slide-caption a:hover {
+        color: #e66b3f; }
+  body .carousel-container .carousel-slide-title {
+    font-size: 2.5rem; }
+  body .carousel-container .carousel-slide-desc {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 1rem; }
+  body .carousel-container a {
+    color: #e66b3f;
+    cursor: pointer; }
+  body .carousel-container .slick-next:before,
+  body .carousel-container .slick-prev:before {
+    color: #e66b3f; }
+  body .lib-campus-links a,
+  body .watzek-nav a {
+    text-decoration: none; }
+  body .lib-campus-links h3,
+  body .watzek-nav h3 {
+    font-size: 1.9rem;
+    font-weight: bold; }
+  body .lib-campus-links ul,
+  body .watzek-nav ul {
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 0; }
+  body .lib-campus-links .nav-section ul li a,
+  body .watzek-nav .nav-section ul li a {
+    font-family: "Open Sans", sans-serif;
+    line-height: 2.5rem; }
+  body .lib-campus-links li a:focus,
+  body .lib-campus-links li a:hover,
+  body .watzek-nav li a:focus,
+  body .watzek-nav li a:hover {
+    color: #e66b3f; }
+  body #s-lg-guide-header-info h1 {
+    font-size: 3rem; }
+  body #s-lg-guide-description {
+    font-size: 1.5rem; }
+  body #s-lg-guide-header .breadcrumb,
+  body #s-lg-tabs-container .nav-tabs > li > a,
+  body .s-lib-box .s-lib-box-title {
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-decoration: none; }
+  body .s-lib-box .s-lib-box-content {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem; }
+  body .s-lib-box .s-lg-label-less,
+  body .s-lib-box .s-lg-label-more,
+  body .s-lib-box a {
+    color: #130;
+    cursor: pointer;
+    text-decoration: underline; }
+    body .s-lib-box .s-lg-label-less:focus, body .s-lib-box .s-lg-label-less:hover,
+    body .s-lib-box .s-lg-label-more:focus,
+    body .s-lib-box .s-lg-label-more:hover,
+    body .s-lib-box a:focus,
+    body .s-lib-box a:hover {
+      color: #e66b3f; }
+  body .s-lib-box .label-info {
+    background-color: #eee;
+    border: 0.25rem solid #000;
+    color: #000;
+    text-decoration: none; }
+    body .s-lib-box .label-info:hover {
+      background-color: #000;
+      color: #fff; }
+  body .s-lib-profile-social > a > i {
+    color: #000;
+    cursor: pointer; }
+    body .s-lib-profile-social > a > i:focus, body .s-lib-profile-social > a > i:hover {
+      color: #e66b3f; }
+  body .s-lib-footer {
+    font-size: 1.2rem; }
+    body .s-lib-footer #s-lib-footer-login-link a,
+    body .s-lib-footer a {
+      color: #000;
+      cursor: pointer; }
+      body .s-lib-footer #s-lib-footer-login-link a:focus, body .s-lib-footer #s-lib-footer-login-link a:hover,
+      body .s-lib-footer a:focus,
+      body .s-lib-footer a:hover {
+        color: #e66b3f; }
+  body .lcfooter a:focus,
+  body .lcfooter a:hover {
+    color: #e66b3f;
+    cursor: pointer; }
+  body .lcfooter .footer-contact {
+    font-size: 2rem; }
+  body .lcfooter .footer-social a {
+    cursor: pointer;
+    font-size: 1.7rem;
+    padding-right: .5rem;
+    text-decoration: none; }
+  body .lcfooter .footer-social a:hover {
+    color: #e66b3f; }
+
+@media (max-width: 992px) {
+  body .lcheader .dropdown-toggle {
+    cursor: default;
+    pointer-events: none; }
+  body .searchwidget {
+    font-size: 1.3rem; }
+    body .searchwidget .textbox {
+      font-size: 1.3rem; }
+    body .searchwidget .scopebuttons input {
+      top: -.4rem; }
+  body .nav-section h3 {
+    font-size: 1.5rem; }
+  body .nav-section ul {
+    font-size: 1.2rem; }
+  body .footer-social {
+    font-size: 1.5rem; } }
+
+@media (max-width: 767px) {
+  body .mini-nav a {
+    color: #000;
+    font-size: 1.7rem;
+    text-decoration: none; }
+  body .mini-widget .textbox {
+    font-size: 1rem; }
+  body .lcfooter .footer-contact {
+    font-size: 1.1rem; }
+  body .lcfooter .footer-social span {
+    font-size: 1.5rem; }
+  body .lcheader .watzek-brand a {
+    font-size: 3rem; } }
+
+.gsc-control-cse {
+  font-family: "Open Sans", sans-serif; }
+  .gsc-control-cse .gcsc-branding {
+    display: none; }
+  .gsc-control-cse .gs-result .gs-title > a {
+    height: 1.5rem;
+    font-size: 1.5rem;
+    color: #130 !important; }
+    .gsc-control-cse .gs-result .gs-title > a:hover,
+    .gsc-control-cse .gs-result .gs-title > a b {
+      color: #e66b3f !important; }
+  .gsc-control-cse .gs-result .gs-visibleUrl {
+    color: #130; }
+  .gsc-control-cse .gsc-results .gsc-cursor-box .gsc-cursor-page.gsc-cursor-current-page {
+    color: #e66b3f; }
+  .gsc-control-cse .gsc-results .gsc-cursor-box .gsc-cursor-page {
+    color: #000; }
+
+#cse-search-box {
+  float: right; }
+
+#s-lg-az-index .btn-group > .btn-link {
+  color: #130;
+  font-size: 2rem; }
+
+#s-lg-az-index .btn-group > .btn-link.bold {
+  font-weight: bold; }
+
+.s-lg-db-panel .s-lg-db-panel-title {
+  font-size: 2.5rem; }
+
+.s-lg-db-panel .s-lg-az-result-title {
+  font-size: 1.75rem; }
+
+.s-lg-db-panel .s-lg-az-result-description {
+  font-size: 1.25rem; }
+
+.s-lg-db-panel .s-lg-label-more-info > .btn-link {
+  color: #130;
+  font-size: 1.25rem;
+  text-decoration: underline; }
+
+.s-lg-db-panel .s-lg-content-more-info {
+  font-size: 1.25rem; }
+
+.s-lg-guide-info-updated,
+.s-lg-guide-info-views {
+  display: none; }
+
+#slaask-button {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
+
+#slaask-button .slaask-button-image {
+  border: 0;
+  background-color: transparent; }
+
+
+
+  .s-lg-book-title{
+    font-weight:500;
+  }
+
+
+  .s-lg-book-title{
+    font-weight:500;
+  }
+  #api_hours_today_iid3636_lid4016{display:none;}
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+
+  @media (max-width: 480px) {
+    .carousel-container{padding:20px;}
+   }
+   
