@@ -1,10 +1,6 @@
 <script>
 $(document).ready(function() {
-    if (window.location.href.indexOf("library.lclark.edu/blog") > -1) {
-        _slaask.init('a95292303f47176e9b4a6a9345a4f35d');
-    } else {
-        _slaask.init('295dd444a1af2c9ab3456b7da45a415a');
-    }
+
 
 
     myFavicon = "https://s3.amazonaws.com/libapps/accounts/38495/images/favicon.ico";
@@ -17,7 +13,7 @@ $(document).ready(function() {
 
     }, 100);
 
-$.get("https://utilities.watzek.cloud/snow/message/snowMessage.php", function(data) {
+$.get("https://library.watzekdi.net/watzek-staff-apps/app/Snow/message/snowMessage.php", function(data) {
 var snow=JSON.parse(data)
     console.log(snow);
     if(snow.enabled=="true"){
