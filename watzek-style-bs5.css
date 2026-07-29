@@ -2,6 +2,13 @@
 @import 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css';
 @import 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css';
 
+/* The LibGuides Bootstrap 3 template set the root font-size to 10px (62.5%),
+   which all of this stylesheet's rem values are designed around. The Bootstrap 5
+   template drops that, defaulting back to 16px and scaling every rem up 1.6x.
+   Restore the 10px root so rem-based sizing matches the production (BS3) site. */
+html {
+  font-size: 62.5%; }
+
 .s-lg-guide-body,
 .s-lib-public-body {
   padding: 0; }
@@ -30,6 +37,11 @@
   padding: 0 2rem; }
 
 .lcheader {
+  /* flow-root establishes a block formatting context so the .header-brand
+     top margin stays contained instead of collapsing through and pushing the
+     background image down. Bootstrap 3's float-grid clearfix did this implicitly;
+     Bootstrap 5 removed it. */
+  display: flow-root;
   margin: auto;
   padding: 0; }
   .lcheader .navbar-toggler {
@@ -362,6 +374,15 @@ body {
     font-family: "Open Sans", sans-serif; }
   body .lcheader .site-search .site-search-input::-webkit-input-placeholder {
     color: #fff; }
+  body .lcheader .site-search .site-search-go {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000; }
+  body .lcheader .site-search .site-search-go:hover,
+  body .lcheader .site-search .site-search-go:focus {
+    background-color: #e6e6e6;
+    border-color: #e6e6e6;
+    color: #000; }
   body .searchwidget {
     font-size: 2rem; }
     body .searchwidget .active > a,
