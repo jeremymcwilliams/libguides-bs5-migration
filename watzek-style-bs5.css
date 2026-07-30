@@ -57,7 +57,11 @@ html {
     margin-top: 1.5rem; }
   .lcheader .hours-library {
     float: right; }
-  .lcheader .navbar-nav > li > a {
+  .lcheader .navbar-nav > li > a.nav-link {
+    /* Bootstrap 5's ".navbar-expand-lg .navbar-nav .nav-link" rule (3 classes)
+       otherwise outranks this and overrides the left/right padding, tightening
+       the gap between nav items. Matching its ".nav-link" class here restores
+       our specificity edge. */
     padding: 1rem; }
   .lcheader .nav > .open a {
     background-color: initial; }
@@ -361,13 +365,27 @@ body {
     font-size: 2rem;
     text-align: center; }
   body .lcheader .dropdown-toggle:hover,
-  body .lcheader .nav a:hover {
+  body .lcheader .navbar-nav .nav-link:hover {
+    /* BS3's markup put a ".nav" class on the top-level <ul>, which the old
+       ".nav a:hover" selector relied on. BS5's <ul class="navbar-nav"> drops
+       ".nav", so that selector stopped matching and Bootstrap 5's own dimmed
+       ".nav-link:hover" color (rgba(255,255,255,.75)) took over instead of
+       this solid white. Targeting ".navbar-nav .nav-link:hover" directly
+       covers every top-level item ("About the Library" included) the same
+       way the dropdown-toggle items are covered. */
     background-color: initial;
+    color: #fff;
     cursor: pointer; }
   body .lcheader .dropdown-menu > li > a {
     color: #000;
     font-size: 1.5rem; }
   body .lcheader .dropdown-menu > li:hover > a {
+    /* Bootstrap 5's ".dropdown-item:hover" sets its own background-color
+       (translucent white in this dark header) directly on the <a>, which
+       paints over the dark background we set on the parent <li>. Setting
+       the background here too, on the same element Bootstrap targets,
+       wins on specificity and restores the dark-bg/white-text hover. */
+    background-color: #04080f;
     color: #fff; }
   body .lcheader .site-search .site-search-input {
     color: #fff;
