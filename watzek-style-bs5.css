@@ -436,6 +436,13 @@ body {
       body .carousel-container .slide-caption a:focus, body .carousel-container .slide-caption a:hover {
         color: #e66b3f; }
   body .carousel-container .carousel-slide-title {
+    /* Bootstrap 3 gave h1-h3 a default "margin-top: 20px", which happened to
+       align this title with the carousel image's own 2rem top padding.
+       Bootstrap 5 zeroes heading margins by default (h1-h6 margin-top: 0),
+       so the caption text now sits flush with the top of the container
+       instead of flush with the image. Restoring the 2rem top margin here
+       brings it back in line. */
+    margin-top: 2rem;
     font-size: 2.5rem; }
   body .carousel-container .carousel-slide-desc {
     font-family: "Open Sans", sans-serif;
