@@ -516,13 +516,23 @@ body {
   body .s-lib-footer {
     font-size: 1.2rem; }
     body .s-lib-footer #s-lib-footer-login-link a,
-    body .s-lib-footer a {
+    body .s-lib-footer #s-lib-footer-login-link a:visited,
+    body .s-lib-footer a,
+    body .s-lib-footer a:visited {
+      /* The site's admin-configured lookfeel.css sets a global "a{color:#2A7993}"
+         and "a:visited{color:#2A7993}" (a teal-blue). A plain, unvisited "a"
+         selector still wins the normal (unvisited) cascade here, but browsers
+         compute a link's visited appearance as its own separate cascade pass,
+         so it needs its own explicit ":visited" override to actually match
+         and win against lookfeel.css's ":visited" rule as well. */
       color: #000;
       cursor: pointer; }
       body .s-lib-footer #s-lib-footer-login-link a:focus, body .s-lib-footer #s-lib-footer-login-link a:hover,
       body .s-lib-footer a:focus,
       body .s-lib-footer a:hover {
         color: #e66b3f; }
+  body .lcfooter a:visited {
+    color: #000; }
   body .lcfooter a:focus,
   body .lcfooter a:hover {
     color: #e66b3f;
