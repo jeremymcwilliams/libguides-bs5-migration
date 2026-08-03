@@ -476,7 +476,8 @@ body {
   body .watzek-nav li a:hover {
     color: #e66b3f; }
   body #s-lg-guide-header-info h1 {
-    font-size: 3rem; }
+    font-size: 3rem; 
+    font-weight: 500;}
   body #s-lg-guide-description {
     font-size: 1.5rem; }
   body #s-lg-guide-header .breadcrumb,
