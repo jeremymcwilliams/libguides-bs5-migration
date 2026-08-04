@@ -459,8 +459,10 @@ body {
     text-decoration: none; }
   body .lib-campus-links h3,
   body .watzek-nav h3 {
+    color: black;
     font-size: 1.9rem;
-    font-weight: bold; }
+    font-family: Karla, sans-serif; 
+  font-weight: 700;}
   body .lib-campus-links ul,
   body .watzek-nav ul {
     font-size: 1.5rem;
@@ -470,6 +472,11 @@ body {
   body .watzek-nav .nav-section ul li a {
     font-family: "Open Sans", sans-serif;
     line-height: 2.5rem; }
+  body .watzek-nav .nav-section ul li a:visited {
+    color:black; }
+
+
+
   body .lib-campus-links li a:focus,
   body .lib-campus-links li a:hover,
   body .watzek-nav li a:focus,
